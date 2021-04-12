@@ -5,13 +5,13 @@
 
 setup:
 	# Create python virtualenv & source it
-	# source ~/.udacity-devops/bin/activate
 	python3 -m venv ~/.udacity-devops
+	source ~/.udacity-devops/bin/activate
 
 install:
 	# This should be run from inside a virtualenv
 	pip install --upgrade pip &&\
-		pip install -r requirements.txt
+	pip install -r requirements.txt
 
 test:
 	# Additional, optional, tests could go here
